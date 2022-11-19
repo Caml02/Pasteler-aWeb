@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordena</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">  
+            <h1> Blanca Nieves Pasteleria</h1>
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        
+    </section>
+    <h2 class="menu-titulo">Ordena</h2>
+
+    <form class="formulario">
+        <p>Arma tu pedido</p>
+        
+        <div class="campo">
+            <Label for="pasteles">¿Qué pastel deseas?</Label>
+        <input class="input-text" list="pasteles">
+        <datalist id="pasteles">
+            <option value="la madrastra"></option>
+            <option value="principe azul"></option>
+            <option value="Blanca Nieves"></option>
+            <option value="7 enanos"></option>
+        </datalist>
+        </div> 
+        
+        <div class="campo">
+            <label for="cuantos">¿Cuantos Pasteles Deseas?</label>
+            <input class="input-text" type="number" id="cuantosP" name="cuantosP" min="1" max="5">
+
+        </div>
+    
+        <p>Selecciona el día de entrega</p>
+        <div class="campo">
+            <label for="fecha">Fecha</label>
+            <input class="input-text" type="date"
+            id="fecha"
+            >
+        </div>
+        <div class="campo">
+            <label for="hora">Hora</label>
+            <input class="input-text" type="time"
+            id="hora"
+            >
+        </div>
+        <div class="campo">
+            <label for="Comentarios">Comentarios</label>
+            <textarea class="input-text"
+            id= "Comentarios"
+            placeholder="Escribe tus comentarios..."
+            >
+            </textarea> 
+        </div>
+
+        <div class="alaign">
+            <input type="submit" value="Enviar" class="button">
+        </div>
+    </form>
+
+
+    <footer class="footer seccion">        
+        <p class="copyright contenedor-footer">
+            Todos los derechos reservados 2022 <span class="material-symbols-outlined">
+                copyright
+                </span>
+        </p>
+</body>
+</html>
